@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    
+}
+
+main {
+    background-image: url("img/backgroundsvg.svg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.row{
+    display: flex;
+ 
+
+    
+    
+}
+
+.row:nth-child(even) .col:nth-child(even) {
+
+    background-color: #4caf50;
+    caret-color: transparent;
+    
+    border-radius:0.2mm;
+}
+.row:nth-child(odd) .col:nth-child(odd) {
+    background-color: #4caf50;
+    caret-color: transparent;
+
+    border-radius:0.2mm;
+}
+
+.row:nth-child(odd) .col:nth-child(even) {
+    background-color: #249d29;
+    caret-color: transparent;
+    border-radius:0.2mm;
+}
+.row:nth-child(even) .col:nth-child(odd) {
+    background-color: #249d29;
+    caret-color: transparent;
+    border-radius:0.2mm;
+}
+
+.row:first-child .col:first-child{
+    border-top-left-radius: 1em;
+}
+
+.row:last-child .col:first-child{
+    border-bottom-left-radius: 1em;
+}
+
+
+.row:first-child .col:last-child{
+    border-top-right-radius: 1em;
+}
+
+
+.row:last-child .col:last-child{
+    border-bottom-right-radius: 1em;
+}
+
+.applesize {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+#start{
+    caret-color: transparent;
+    width: 350px;
+    text-align: center;
+    padding: 15px 20px;
+    border: 3px solid #ffa600;
+    border-radius: 50px;
+    background-color:#ffa600;
+    font-size: 20px;
+    position:absolute;
+    top: 85%;
+    right: 50%;
+    font-family: 'Poppins', sans-serif;
+    left: 41%;
+}
+
+#start:active {
+    caret-color: transparent;
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.snakesize{
+    object-fit:fill;
+    height: 100%;
+    width: 100%;
+
+}
+
+#points{
+    width: 180px;
+    text-align: center;
+
+    background-color:#ffa600;
+    border-radius: 20px;
+    caret-color: transparent;
+    font-size: 20px;
+    position:absolute;
+    top: 13%;
+    right: 80%;
+    font-family: 'Poppins', sans-serif;
+    left: 41%;
+}
